@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const _kPrimaryColor = Color(0xFF72B835);
+const _kPrimaryColor = Color(0xFF89C152);
 
 class QrHelpSheet extends StatelessWidget {
   const QrHelpSheet({super.key});
@@ -24,7 +24,9 @@ class QrHelpSheet extends StatelessWidget {
               borderRadius: BorderRadius.circular(2),
             ),
           ),
+
           const SizedBox(height: 20),
+
           Container(
             width: 48,
             height: 48,
@@ -38,7 +40,9 @@ class QrHelpSheet extends StatelessWidget {
               size: 26,
             ),
           ),
+
           const SizedBox(height: 16),
+
           const Text(
             'Как сканировать QR-код?',
             style: TextStyle(
@@ -48,7 +52,9 @@ class QrHelpSheet extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
+
           const SizedBox(height: 8),
+
           const Text(
             'Наведите камеру на QR-код, расположенный на экране\nфандомата.',
             textAlign: TextAlign.center,
@@ -58,25 +64,37 @@ class QrHelpSheet extends StatelessWidget {
               height: 1.35,
             ),
           ),
+
           const SizedBox(height: 24),
+
           const _StepTile(
             icon: Icons.qr_code_scanner,
             title: 'Шаг 1',
             subtitle: 'Держите QR-код внутри рамки.',
           ),
-          const Divider(height: 24, color: Color(0xFFF2F2F7)),
+
+          const Divider(
+            height: 24, 
+            color: Color(0xFFF2F2F7)),
+
           const _StepTile(
             icon: Icons.flash_on_outlined,
             title: 'Шаг 2',
             subtitle: 'При плохом освещении включите вспышку.',
           ),
-          const Divider(height: 24, color: Color(0xFFF2F2F7)),
+
+          const Divider(
+            height: 24, 
+            color: Color(0xFFF2F2F7)),
+
           const _StepTile(
             icon: Icons.check,
             title: 'Шаг 3',
             subtitle: 'После успешного сканирования подключение\nпроизойдет автоматически.',
           ),
+
           const SizedBox(height: 28),
+          
           SizedBox(
             width: double.infinity,
             height: 52,
